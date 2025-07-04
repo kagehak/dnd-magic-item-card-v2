@@ -7,11 +7,13 @@ import classnames from 'classnames';
 import card from './assets/magic-item.png';
 import cardDefault from './assets/card--default.png';
 import cardLong from './assets/card--long.png';
+import cardItem from './assets/card--item.png';
 import './Card.css';
 
 const cards = {
   default: cardDefault,
   long: cardLong,
+  item: cardItem,
 }
 
 const noop = () => {};
@@ -59,11 +61,12 @@ export default class Card extends Component {
         {this.renderField('type')}
         {this.renderField('value', {
           forceSingleModeWidth: true,
-          max: 241,
+          max: 260,
         })}
         {this.renderField('description', {
           mode: 'multi',
-          max: 140,
+		  min: 160,
+          max: 240,
         })}
       </div>
     );

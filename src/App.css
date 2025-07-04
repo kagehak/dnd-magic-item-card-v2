@@ -22,17 +22,17 @@ html {
 
 .app-container--print {
   display: grid;
-  grid-template-columns: 2.5in 2.5in 2.5in;
-  grid-template-rows: 3.5in 3.5in 3.5in;
-  grid-gap: 0.05in;
+  grid-template-columns: 5in 5in 5in;
+  grid-template-rows: 3.4in 3.4in 3.4in 3.4in 3.4in 3.4in;
+  grid-gap: 0.1in;
 
   padding-top: 0.2in;
   padding-bottom: 0.2in;
-  height: 10.6in;
+  height: 21.2in;
 
   padding-left: 0.45in;
   padding-right: 0.45in;
-  width: 7.6in;
+  width: 15.2in;
 }
 
 .app-container--print .container {

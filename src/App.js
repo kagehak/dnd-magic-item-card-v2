@@ -104,6 +104,7 @@ class CardEditor extends Component {
     return [
       'default',
       'long',
+	  'item',
     ];
   }
 
@@ -182,7 +183,7 @@ class App extends Component {
         {printMode && <button className="download-all" onClick={this.onSave}>Create Image</button>}
         {href && <a className="download-cards" download="cards.png" href={href}>Download Image</a>}
         <div className={classes} ref={ref => this.ref = ref}>
-          {R.range(0, 9).map(i => (
+          {R.range(0, 18).map(i => (
             <CardEditor key={i} localStorageKey={`card${i}`} />
           ))}
         </div>
